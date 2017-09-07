@@ -26,6 +26,9 @@ public:
 	void AimAt(FVector HitLocation);
 
 protected:
+
+	virtual void BeginPlay();
+
 	UPROPERTY(BlueprintReadOnly)
 	UTankAimingComponent* TankAimingComponent = nullptr;
 
